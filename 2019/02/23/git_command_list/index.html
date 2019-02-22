@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Git コマンド 一覧  &middot; ThirtyFive BLOG</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="GitHub, Git, コマンド, ">
+
+
+<meta property="og:title" content="Git コマンド 一覧  &middot; ThirtyFive BLOG ">
+<meta property="og:site_name" content="ThirtyFive BLOG"/>
+<meta property="og:url" content="https://co-thirtyfive.github.io/2019/02/23/git_command_list/" />
+<meta property="og:locale" content="ja-jp">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-02-23T04:13:02&#43;09:00" />
+<meta property="og:article:modified_time" content="2019-02-23T04:13:02&#43;09:00" />
+
+  
+    
+<meta property="og:article:tag" content="GitHub">
+    
+<meta property="og:article:tag" content="Git">
+    
+<meta property="og:article:tag" content="コマンド">
+    
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Co_thirtyfive" />
+<meta name="twitter:creator" content="@Co_thirtyfive" />
+<meta name="twitter:title" content="Git コマンド 一覧" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://co-thirtyfive.github.io/2019/02/23/git_command_list/" />
+<meta name="twitter:domain" content="https://co-thirtyfive.github.io/">
+  
+
+  
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Git コマンド 一覧",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2019-02-23",
+    "description": "",
+    "wordCount": 1700
+  }
+</script>
+  
+
+
+
+<link rel="canonical" href="https://co-thirtyfive.github.io/2019/02/23/git_command_list/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link rel="icon" href="/favicon.png">
+<meta name="generator" content="Hugo 0.54.0" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="https://co-thirtyfive.github.io/css/bundle.min.068a8fc80b9e5f1229c330b7ccc5bb5c4d69668e9fba710b25928c253bbd7b48c7396b69680a3ec5a3adb868d800de683bb75cf17e2d2d4c615c4320d0911c14.css" integrity="sha512-BoqPyAueXxIpwzC3zMW7XE1pZo6funELJZKMJTu9e0jHOWtpaAo&#43;xaOtuGjYAN5oO7dc8X4tLUxhXEMg0JEcFA==">
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-134682436-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</head>
+<body class="map[name:yeti]" data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+        <a class="navbar-brand" href="/">
+          ThirtyFive BLOG
+          
+          
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+                <a href="https://co-thirtyfive.github.io/" >
+                  <i class='fa fa-home'></i>
+                  Home
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+                <a href="https://co-thirtyfive.github.io/post/" >
+                  <i class='fa fa-archive'></i>
+                  Archives
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+                <a href="https://co-thirtyfive.github.io/about/" >
+                  <i class='fa fa-info-circle'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>Git コマンド 一覧
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-02-23">23 Feb, 2019</time>
+</small>
+
+
+  <small>
+  &middot; Read in about 4 min
+  &middot; (1700 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fgit_command_list%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Git%20%e3%82%b3%e3%83%9e%e3%83%b3%e3%83%89%20%e4%b8%80%e8%a6%a7&amp;url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fgit_command_list%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fgit_command_list%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fgit_command_list%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fgit_command_list%2f&amp;title=Git%20%e3%82%b3%e3%83%9e%e3%83%b3%e3%83%89%20%e4%b8%80%e8%a6%a7" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Git%20%e3%82%b3%e3%83%9e%e3%83%b3%e3%83%89%20%e4%b8%80%e8%a6%a7&amp;body=Check out this site https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fgit_command_list%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://co-thirtyfive.github.io/tags/github" class="label label-primary">GitHub</a>
+  
+  <a href="https://co-thirtyfive.github.io/tags/git" class="label label-primary">Git</a>
+  
+  <a href="https://co-thirtyfive.github.io/tags/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89" class="label label-primary">コマンド</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+<h1 id="gitコマンド一覧">Gitコマンド一覧</h1>
+
+<h3 id="コピペで使用する用">コピペで使用する用</h3>
+
+<hr />
+
+<p><br></p>
+
+<p><code>初期設定</code></p>
+
+<pre><code class="language-commnd">git config --global user.name &quot;XXXX&quot;
+git config --global user.email &quot;XXXX@hogehoge.com&quot;
+</code></pre>
+
+<p><br></p>
+
+<p><code>ローカルにリポジトリを作成する</code></p>
+
+<pre><code class="language-commnd">git init
+git add .
+git commit -m &quot;initial commit&quot;
+</code></pre>
+
+<p><br></p>
+
+<p><code>ローカルリポジトリをリモートリポジトリにプッシュする</code></p>
+
+<pre><code class="language-commnd">git remote add origin https://github.com/XXXX/XXXX.git
+git push -u origin master
+</code></pre>
+
+<p><br></p>
+
+<p><code>リモートリポジトリからローカルリポジトリにクローンを作成する</code></p>
+
+<pre><code class="language-commnd">git clone https://github.com/XXXX/XXXX.git
+</code></pre>
+
+<p><br></p>
+
+<p><code>リモートから変更を取得する(pull)</code></p>
+
+<pre><code class="language-commnd">git pull
+</code></pre>
+
+<p><br></p>
+
+<p><code>リモートから変更を取得する(fetch)</code></p>
+
+<pre><code class="language-commnd">git fetch
+git merge origin/master
+</code></pre>
+
+<p><br></p>
+
+<p><code>コミットするためのファイル登録(ファイル別)</code></p>
+
+<pre><code class="language-commnd">git add ファイル名
+</code></pre>
+
+<p><br></p>
+
+<p><code>コミットするためのファイル登録(全てのファイル・ディレクトリ)</code></p>
+
+<pre><code class="language-commnd">git add .
+</code></pre>
+
+<p><br></p>
+
+<p><code>追加されるファイルを調べる</code></p>
+
+<pre><code class="language-commnd">git add -n
+</code></pre>
+
+<p><br></p>
+
+<p><code>変更されたファイルを追加する</code></p>
+
+<pre><code class="language-commnd">git add -u
+</code></pre>
+
+<p><br></p>
+
+<p><code>git addしたファイルを除外する</code></p>
+
+<pre><code class="language-commnd">git rm --cached
+</code></pre>
+
+<p><br></p>
+
+<p><code>ファイルの変更、追加をコミットする</code></p>
+
+<pre><code class="language-commnd">git commit -m &quot;コミットメッセージ&quot;
+git commit -a -m &quot;コミットメッセージ&quot;(-aのオプションは変更を自動検出する)
+</code></pre>
+
+<p><br></p>
+
+<p><code>ローカルの変更を確認する</code></p>
+
+<pre><code class="language-commnd">git status
+</code></pre>
+
+<p><br></p>
+
+<p><code>ローカルリポジトリとリモートリポジトリのファイル差分を抽出する</code></p>
+
+<pre><code class="language-commnd">git diff ファイル名
+</code></pre>
+
+<p><br></p>
+
+<p><code>commitの変更履歴を確認する</code></p>
+
+<pre><code class="language-commnd">git log
+</code></pre>
+
+<p><br></p>
+
+<p><code>コミットのハッシュ値で指定したコミットの変更点を見る</code></p>
+
+<pre><code class="language-commnd">git show コミットのハッシュ値
+</code></pre>
+
+<p><br></p>
+
+<p><code>リモートリポジトリにプッシュ</code></p>
+
+<pre><code class="language-commnd">git push origin ブランチ名
+</code></pre>
+
+<p><br></p>
+
+<p><code>ファイル登録を取り消しする</code></p>
+
+<pre><code class="language-commnd">git reset HEAD ファイル名
+</code></pre>
+
+<p><br></p>
+
+<p><code>コミットを取り消しする</code></p>
+
+<pre><code class="language-commnd">git reset --hard HEAD^ (直前のコミットを取り消して、ともにワークディレクトリの内容も書き換える)
+git reset --soft HEAD^ (直前のコミットを取り消して、ワークディレクトリの内容はそのままにする)
+git reset --hard HEAD~{i} (i個前のコミットを取り消して、ともにワークディレクトリの内容も書き換える)
+git reset --soft HEAD~{i} (i個前のコミットを取り消して、ワークディレクトリの内容はそのままにする)
+</code></pre>
+
+<p><br></p>
+
+<p><code>コミットを打ち消しする</code></p>
+
+<pre><code class="language-commnd">git revert コミットのハッシュ値
+</code></pre>
+
+<p><br></p>
+
+<p><code>コミットメッセージを修正する</code></p>
+
+<pre><code class="language-commnd">git commit --amend &quot;新しいコミットメッセージ&quot;
+</code></pre>
+
+<p><br></p>
+
+<p><code>プッシュの取り消しをする</code></p>
+
+<pre><code class="language-commnd">git reset --hard 戻したいコミットのハッシュ値
+git push -f
+</code></pre>
+
+<p><br></p>
+
+<p><code>ローカルリポジトリでブランチを作成する</code></p>
+
+<pre><code class="language-commnd">git branch ブランチ名
+</code></pre>
+
+<p><br></p>
+
+<p><code>ローカルリポジトリでブランチを切り替えする</code></p>
+
+<pre><code class="language-commnd">git checkout ブランチ名
+</code></pre>
+
+<p><br></p>
+
+<p><code>ブランチの作成と切り替えをする</code></p>
+
+<pre><code class="language-commnd">git branch -b ブランチ名
+</code></pre>
+
+<p><br></p>
+
+<p><code>ブランチ名の変更をする</code></p>
+
+<pre><code class="language-commnd">git branch -m 古いブランチ名 新しいブランチ名
+</code></pre>
+
+<p><br></p>
+
+<p><code>ブランチを削除する</code></p>
+
+<pre><code class="language-commnd">git branch -d ブランチ名
+</code></pre>
+
+<p><br></p>
+
+<p><code>ローカルブランチをリモートリポジトリに反映する</code></p>
+
+<pre><code class="language-commnd">git push -u origin ローカルのブランチ名
+</code></pre>
+
+<p><br></p>
+
+<p><code>リモートブランチをローカルに反映する</code></p>
+
+<pre><code class="language-commnd">git branch ブランチ名 origin/ブランチ名
+</code></pre>
+
+<p><br></p>
+
+<p><code>リモートブランチをローカルに反映して、切り替えをする</code></p>
+
+<pre><code class="language-commnd">git checkout -b ブランチ名 origin/ブランチ名
+</code></pre>
+
+<p><br></p>
+
+<p><code>全てのブランチを確認する</code></p>
+
+<pre><code class="language-commnd">git branch -a
+</code></pre>
+
+<p><br></p>
+
+<p><code>ブランチを比較する</code></p>
+
+<pre><code class="language-commnd">git diff ブランチ名 ブランチ名
+</code></pre>
+
+<p><br></p>
+
+<p><code>ブランチをマージ(分岐元のブランチで実行)する</code></p>
+
+<pre><code class="language-commnd">git merge ブランチ名
+</code></pre>
+
+<p><br></p>
+
+<p><code>ブランチをリベース(分岐先のブランチで実行)する</code></p>
+
+<pre><code class="language-commnd">git rebase ブランチ名
+</code></pre>
+
+<p><br></p>
+
+<p><code>変更点を一時退避させる</code></p>
+
+<pre><code class="language-commnd">git stash save
+</code></pre>
+
+<p><br></p>
+
+<p><code>退避した作業の一覧を確認する</code></p>
+
+<pre><code class="language-commnd">git stash list
+</code></pre>
+
+<p><br></p>
+
+<p><code>退避した作業を戻す</code></p>
+
+<pre><code class="language-commnd">git stash apply stash名
+</code></pre>
+
+<p><br></p>
+
+<p><code>退避した作業を消す</code></p>
+
+<pre><code class="language-commnd">git stash drop stash名
+</code></pre>
+
+<p><br></p>
+
+<p><code>退避した作業を全て消す</code></p>
+
+<pre><code class="language-commnd">git stash clear
+</code></pre>
+
+<p><br></p>
+
+<p><code>ファイル削除する</code></p>
+
+<pre><code class="language-commnd">git rm -f  ファイル名
+</code></pre>
+
+<p><br></p>
+
+<p><code>ファイルをリネームする</code></p>
+
+<pre><code class="language-commnd">git mv 元のファイル名 変えたいファイル名
+</code></pre>
+
+<p><br></p>
+
+<p><code>ファイルを最新のコミット状態に戻す</code></p>
+
+<pre><code class="language-commnd">git checkout HEAD ファイル名
+</code></pre>
+
+<p><br></p>
+
+<p><code>ファイルを指定したコミットまで戻す</code></p>
+
+<pre><code class="language-commnd">git checkout コミットのハッシュ値 ファイル名
+</code></pre>
+
+<p><br></p>
+
+<p><code>.gitignoreを無視して追加する</code></p>
+
+<pre><code class="language-commnd">git add -f ファイル名
+</code></pre>
+
+<p><br></p>
+
+<p><code>ディレクトリだけ登録する(.gitkeepをディレクトリに作成する)</code></p>
+
+<pre><code class="language-commnd">touch ディレクトリ名/.gitkeep
+</code></pre>
+
+<p><br></p>
+
+<hr />
+
+<p><code>コミットメッセージの修正方法(例: 3件目のコミットメッセージを修正)</code></p>
+
+<pre><code class="language-commnd">git rebase -i HEAD~3
+</code></pre>
+
+<p><br></p>
+
+<p><code>上記のコマンド実行でVimが起動して、最新コミットから上で指定した過去３件のコミットが表示されます</code></p>
+
+<pre><code class="language-commnd">git rebase -i HEAD~3
+</code></pre>
+
+<p><br></p>
+
+<p><code>上記のコマンド実行でVimが起動して、最新コミットから上で指定した過去３件のコミットが表示されます</code></p>
+
+<pre><code class="language-vim:">pick {コミットID} {コミットメッセージ} ※ 3件目
+pick {コミットID} {コミットメッセージ} ※ 2件目
+pick {コミットID} {コミットメッセージ} ※ 1件目(最新コミット)
+</code></pre>
+
+<p><br></p>
+
+<p><a href="https://co-thirtyfive.github.io/2019/02/23/vim-command-list/">Vimコマンド一覧</a></p>
+
+<p><br></p>
+
+<p><code>上記のpickをeditあるいはeに変更してファイルを保存して、下記のコマンドでコミットする</code></p>
+
+<pre><code class="language-commnd">git commit --amend
+</code></pre>
+
+<p><br></p>
+
+<p><code>そして下記のコマンドを実行して完了となります</code></p>
+
+<pre><code class="language-commnd">git rebase --continue
+</code></pre>
+
+<hr />
+
+<hr />
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fgit_command_list%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Git%20%e3%82%b3%e3%83%9e%e3%83%b3%e3%83%89%20%e4%b8%80%e8%a6%a7&amp;url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fgit_command_list%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fgit_command_list%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fgit_command_list%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fgit_command_list%2f&amp;title=Git%20%e3%82%b3%e3%83%9e%e3%83%b3%e3%83%89%20%e4%b8%80%e8%a6%a7" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Git%20%e3%82%b3%e3%83%9e%e3%83%b3%e3%83%89%20%e4%b8%80%e8%a6%a7&amp;body=Check out this site https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fgit_command_list%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="https://co-thirtyfive.github.io/2019/02/23/codeigniter_set_set_select-php/" title="CodeIgniter(コードイグナイター)のset_select()メモ">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="https://co-thirtyfive.github.io/2019/02/23/github_account_get/" title="GitHubのアカウント取得方法">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//co-thirtyfive-github-io.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://co-thirtyfive.github.io/2019/02/23/windows10_hdd/">Windows10で外付けHDDが認識しない</a>
+          </li>
+        
+          <li>
+          <a href="https://co-thirtyfive.github.io/2019/02/23/vim_command_list/">Vimコマンド 一覧</a>
+          </li>
+        
+          <li>
+          <a href="https://co-thirtyfive.github.io/2019/02/23/ssh_github/">GitHubなどの接続で使用するSSHの作成方法</a>
+          </li>
+        
+          <li>
+          <a href="https://co-thirtyfive.github.io/2019/02/23/mac_terminal_command/">Macターミナルコマンド一覧</a>
+          </li>
+        
+          <li>
+          <a href="https://co-thirtyfive.github.io/2019/02/23/homebrew_install/">Homebrewのインストールから操作</a>
+          </li>
+        
+          <li>
+          <a href="https://co-thirtyfive.github.io/2019/02/23/github_account_get/">GitHubのアカウント取得方法</a>
+          </li>
+        
+          <li>
+          <a href="https://co-thirtyfive.github.io/2019/02/23/git_command_list/">Git コマンド 一覧</a>
+          </li>
+        
+          <li>
+          <a href="https://co-thirtyfive.github.io/2019/02/23/codeigniter_set_set_select-php/">CodeIgniter(コードイグナイター)のset_select()メモ</a>
+          </li>
+        
+          <li>
+          <a href="https://co-thirtyfive.github.io/2019/02/23/hugo_install/">HUGOでGitHubPagesにブログを開設する方法</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>category</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="/categories/codeigniter">codeigniter</a></li><li><a href="/categories/command">command</a></li><li><a href="/categories/git">git</a></li><li><a href="/categories/github">github</a></li><li><a href="/categories/homebrew">homebrew</a></li><li><a href="/categories/hugo">hugo</a></li><li><a href="/categories/vim">vim</a></li><li><a href="/categories/windows10">windows10</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="/tags/github">github</a></li><li><a href="/tags/mac">mac</a></li><li><a href="/tags/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89">コマンド</a></li><li><a href="/tags/apple">apple</a></li><li><a href="/tags/codeigniter">codeigniter</a></li><li><a href="/tags/git">git</a></li><li><a href="/tags/homebrew">homebrew</a></li><li><a href="/tags/hugo">hugo</a></li><li><a href="/tags/osx">osx</a></li><li><a href="/tags/pc">pc</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+
+</div>
+
+      </div>
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "co-thirtyfive-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Copyright&copy; <a href='/about/'>Co.ThirtyFive</a>
+
+</small>
+</div>
+
+
+    
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+<script src="//load.sumome.com/" data-sumo-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var ENABLE_POPOVER =  null , 
+EXPIRE_COOKIE =  null , 
+SHOW_MODAL_TIMEOUT =  null , 
+MOUSE_LEAVE =  null , 
+MODAL_SIZE =  null , 
+POST_URL =  null , 
+SIGNUP_HEADER =  null ,
+HEADER_IMAGE =  null ,
+IMG_DESCRIPTION =  null ,
+SIGNUP_TEXT =  null ,
+INPUT_PLACEHOLDER =  null ,
+SUBMIT_BUTTON =  null ,
+SUCCESS_MESSAGE =  null ,
+ERROR_MESSAGE =  null ,
+OPTIN =  null ,
+COOKIE_NAME =  null ,
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://co-thirtyfive.github.io/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" integrity="sha512-oHYb&#43;FmO3aK7LA40ijFgxBjyvDCQj0B0DufzDau97tJ9gu5Y4WQAut0a6EznvnzhBwLJviFqvl3hy0l96ZXoUA=="></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax//MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax//config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+

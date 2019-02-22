@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on ThirtyFive BLOG</title>
+    <link>https://co-thirtyfive.github.io/categories/vim/</link>
+    <description>Recent content in Vim on ThirtyFive BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</managingEditor>
+    <webMaster>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</webMaster>
+    <lastBuildDate>Sat, 23 Feb 2019 04:15:54 +0900</lastBuildDate>
+    
+	<atom:link href="https://co-thirtyfive.github.io/categories/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vimコマンド 一覧</title>
+      <link>https://co-thirtyfive.github.io/2019/02/23/vim_command_list/</link>
+      <pubDate>Sat, 23 Feb 2019 04:15:54 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/2019/02/23/vim_command_list/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

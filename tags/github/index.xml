@@ -8,10 +8,28 @@
     <language>ja-jp</language>
     <managingEditor>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</managingEditor>
     <webMaster>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</webMaster>
-    <lastBuildDate>Sat, 23 Feb 2019 03:54:36 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 23 Feb 2019 04:13:49 +0900</lastBuildDate>
     
 	<atom:link href="https://co-thirtyfive.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitHubのアカウント取得方法</title>
+      <link>https://co-thirtyfive.github.io/2019/02/23/github_account_get/</link>
+      <pubDate>Sat, 23 Feb 2019 04:13:49 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/2019/02/23/github_account_get/</guid>
+      <description>GitHubのアカウント取得方法。 まずはGitHubのサイトにアクセスして下さい。 そうするとトップページでアカウントを作れますのでページ右側</description>
+    </item>
+    
+    <item>
+      <title>Git コマンド 一覧</title>
+      <link>https://co-thirtyfive.github.io/2019/02/23/git_command_list/</link>
+      <pubDate>Sat, 23 Feb 2019 04:13:02 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/2019/02/23/git_command_list/</guid>
+      <description>Gitコマンド一覧 コピペで使用する用 初期設定 git config --global user.name &amp;quot;XXXX&amp;quot; git config --global user.email &amp;quot;XXXX@hogehoge.com&amp;quot; ローカルにリポジトリを作成する git init git add . git commit -m &amp;quot;initial commit&amp;quot; ローカルリポジトリをリモー</description>
+    </item>
     
     <item>
       <title>HUGOでGitHubPagesにブログを開設する方法</title>

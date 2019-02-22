@@ -8,10 +8,82 @@
     <language>ja-jp</language>
     <managingEditor>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</managingEditor>
     <webMaster>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</webMaster>
-    <lastBuildDate>Sat, 23 Feb 2019 03:54:36 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 23 Feb 2019 04:16:16 +0900</lastBuildDate>
     
 	<atom:link href="https://co-thirtyfive.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows10で外付けHDDが認識しない</title>
+      <link>https://co-thirtyfive.github.io/2019/02/23/windows10_hdd/</link>
+      <pubDate>Sat, 23 Feb 2019 04:16:16 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/2019/02/23/windows10_hdd/</guid>
+      <description>Windows10で外付けHDDが認識しない 最近、会社の同僚で『外付けHDDを買ったんだけどPCが認識しないので困っている』 という相談を受け</description>
+    </item>
+    
+    <item>
+      <title>Vimコマンド 一覧</title>
+      <link>https://co-thirtyfive.github.io/2019/02/23/vim_command_list/</link>
+      <pubDate>Sat, 23 Feb 2019 04:15:54 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/2019/02/23/vim_command_list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHubなどの接続で使用するSSHの作成方法</title>
+      <link>https://co-thirtyfive.github.io/2019/02/23/ssh_github/</link>
+      <pubDate>Sat, 23 Feb 2019 04:15:18 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/2019/02/23/ssh_github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Macターミナルコマンド一覧</title>
+      <link>https://co-thirtyfive.github.io/2019/02/23/mac_terminal_command/</link>
+      <pubDate>Sat, 23 Feb 2019 04:14:57 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/2019/02/23/mac_terminal_command/</guid>
+      <description>Macのターミナルコマンド 用語 ディレクトリ (フォルダ) カレントディレクトリ (現在いるディレクトリ) ホームディレクトリ (ターミナルを起動時のデ</description>
+    </item>
+    
+    <item>
+      <title>Homebrewのインストールから操作</title>
+      <link>https://co-thirtyfive.github.io/2019/02/23/homebrew_install/</link>
+      <pubDate>Sat, 23 Feb 2019 04:14:24 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/2019/02/23/homebrew_install/</guid>
+      <description>Homebrewのインストール( 初心者向け ) まずはインストールに必要なツールをターミナルでインストールします。 ※将来的にApple製品のアプ</description>
+    </item>
+    
+    <item>
+      <title>GitHubのアカウント取得方法</title>
+      <link>https://co-thirtyfive.github.io/2019/02/23/github_account_get/</link>
+      <pubDate>Sat, 23 Feb 2019 04:13:49 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/2019/02/23/github_account_get/</guid>
+      <description>GitHubのアカウント取得方法。 まずはGitHubのサイトにアクセスして下さい。 そうするとトップページでアカウントを作れますのでページ右側</description>
+    </item>
+    
+    <item>
+      <title>Git コマンド 一覧</title>
+      <link>https://co-thirtyfive.github.io/2019/02/23/git_command_list/</link>
+      <pubDate>Sat, 23 Feb 2019 04:13:02 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/2019/02/23/git_command_list/</guid>
+      <description>Gitコマンド一覧 コピペで使用する用 初期設定 git config --global user.name &amp;quot;XXXX&amp;quot; git config --global user.email &amp;quot;XXXX@hogehoge.com&amp;quot; ローカルにリポジトリを作成する git init git add . git commit -m &amp;quot;initial commit&amp;quot; ローカルリポジトリをリモー</description>
+    </item>
+    
+    <item>
+      <title>CodeIgniter(コードイグナイター)のset_select()メモ</title>
+      <link>https://co-thirtyfive.github.io/2019/02/23/codeigniter_set_set_select-php/</link>
+      <pubDate>Sat, 23 Feb 2019 04:12:06 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/2019/02/23/codeigniter_set_set_select-php/</guid>
+      <description>CodeIgniterのset_select()で少しハマってしまったのでメモ CodeIgniter(コードイグナイター)のset_sele</description>
+    </item>
     
     <item>
       <title>HUGOでGitHubPagesにブログを開設する方法</title>
