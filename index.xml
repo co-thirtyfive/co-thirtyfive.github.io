@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ThirtyFive BLOG</title>
+    <link>https://co-thirtyfive.github.io/</link>
+    <description>Recent content on ThirtyFive BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</managingEditor>
+    <webMaster>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</webMaster>
+    <lastBuildDate>Sat, 23 Feb 2019 03:54:36 +0900</lastBuildDate>
+    
+	<atom:link href="https://co-thirtyfive.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HUGOでGitHubPagesにブログを開設する方法</title>
+      <link>https://co-thirtyfive.github.io/2019/02/23/hugo_install/</link>
+      <pubDate>Sat, 23 Feb 2019 03:54:36 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/2019/02/23/hugo_install/</guid>
+      <description>HUGOをインストールしブログを投稿する方法(初心者向け) このブログは、いくつかある静的サイトジェネレーターの中のHUGOで作りました。 自分</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://co-thirtyfive.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/about/</guid>
+      <description>このブログについて 日々の業務で学んだことや、 ハマってしまった時の同じことで詰まってしまわないようにするためのメモ。 また趣味などマイペースに書いていこうかなと思っています。 自己紹介 恵比寿のとある会社でwebエンジニアをやっています。 この業界に入ったのは2018年頃です。
+主な使用言語や環境など
+ PHP
+ フレームワーク
+ CodeIgniter  テンプレートエンジン  Smarty     
+ SQL  MySQL    
+ JavaScript  ライブラリ  jQuery Vue.js     
+ JavaScript + CSS  Bootstrap</description>
+    </item>
+    
+  </channel>
+</rss>

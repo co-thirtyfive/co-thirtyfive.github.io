@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on ThirtyFive BLOG</title>
+    <link>https://co-thirtyfive.github.io/categories/</link>
+    <description>Recent content in Categories on ThirtyFive BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <managingEditor>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</managingEditor>
+    <webMaster>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</webMaster>
+    
+	<atom:link href="https://co-thirtyfive.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://co-thirtyfive.github.io/categories/hugo/</link>
+      <pubDate>Sat, 23 Feb 2019 03:54:36 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

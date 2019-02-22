@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>HUGOでGitHubPagesにブログを開設する方法  &middot; ThirtyFive BLOG</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="GitHub, HUGO, ">
+
+
+<meta property="og:title" content="HUGOでGitHubPagesにブログを開設する方法  &middot; ThirtyFive BLOG ">
+<meta property="og:site_name" content="ThirtyFive BLOG"/>
+<meta property="og:url" content="https://co-thirtyfive.github.io/2019/02/23/hugo_install/" />
+<meta property="og:locale" content="ja-jp">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2019-02-23T03:54:36&#43;09:00" />
+<meta property="og:article:modified_time" content="2019-02-23T03:54:36&#43;09:00" />
+
+  
+    
+<meta property="og:article:tag" content="GitHub">
+    
+<meta property="og:article:tag" content="HUGO">
+    
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Co_thirtyfive" />
+<meta name="twitter:creator" content="@Co_thirtyfive" />
+<meta name="twitter:title" content="HUGOでGitHubPagesにブログを開設する方法" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://co-thirtyfive.github.io/2019/02/23/hugo_install/" />
+<meta name="twitter:domain" content="https://co-thirtyfive.github.io/">
+  
+
+  
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "HUGOでGitHubPagesにブログを開設する方法",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2019-02-23",
+    "description": "",
+    "wordCount": 3029
+  }
+</script>
+  
+
+
+
+<link rel="canonical" href="https://co-thirtyfive.github.io/2019/02/23/hugo_install/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link rel="icon" href="/favicon.png">
+<meta name="generator" content="Hugo 0.54.0" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="https://co-thirtyfive.github.io/css/bundle.min.068a8fc80b9e5f1229c330b7ccc5bb5c4d69668e9fba710b25928c253bbd7b48c7396b69680a3ec5a3adb868d800de683bb75cf17e2d2d4c615c4320d0911c14.css" integrity="sha512-BoqPyAueXxIpwzC3zMW7XE1pZo6funELJZKMJTu9e0jHOWtpaAo&#43;xaOtuGjYAN5oO7dc8X4tLUxhXEMg0JEcFA==">
+
+</head>
+<body class="map[name:yeti]" data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+        <a class="navbar-brand" href="/">
+          ThirtyFive BLOG
+          
+          
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+              
+                <a href="https://co-thirtyfive.github.io/" >
+                  <i class='fa fa-home'></i>
+                  Home
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+                <a href="https://co-thirtyfive.github.io/post/" >
+                  <i class='fa fa-archive'></i>
+                  Archives
+                </a>
+              
+            </li>
+            
+            <li class="">
+              
+                <a href="https://co-thirtyfive.github.io/about/" >
+                  <i class='fa fa-info-circle'></i>
+                  About
+                </a>
+              
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="title-metas text-center">
+
+    <h1>HUGOでGitHubPagesにブログを開設する方法
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2019-02-23">23 Feb, 2019</time>
+</small>
+
+
+  <small>
+  &middot; Read in about 7 min
+  &middot; (3029 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fhugo_install%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=HUGO%e3%81%a7GitHubPages%e3%81%ab%e3%83%96%e3%83%ad%e3%82%b0%e3%82%92%e9%96%8b%e8%a8%ad%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95&amp;url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fhugo_install%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fhugo_install%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fhugo_install%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fhugo_install%2f&amp;title=HUGO%e3%81%a7GitHubPages%e3%81%ab%e3%83%96%e3%83%ad%e3%82%b0%e3%82%92%e9%96%8b%e8%a8%ad%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=HUGO%e3%81%a7GitHubPages%e3%81%ab%e3%83%96%e3%83%ad%e3%82%b0%e3%82%92%e9%96%8b%e8%a8%ad%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95&amp;body=Check out this site https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fhugo_install%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="https://co-thirtyfive.github.io/tags/github" class="label label-primary">GitHub</a>
+  
+  <a href="https://co-thirtyfive.github.io/tags/hugo" class="label label-primary">HUGO</a>
+  
+
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+
+      <div class="content">
+  
+
+<h1 id="hugoをインストールしブログを投稿する方法-初心者向け">HUGOをインストールしブログを投稿する方法(初心者向け)</h1>
+
+<p>このブログは、いくつかある静的サイトジェネレーターの中のHUGOで作りました。<br />
+自分へのメモも含めて公開までの流れを書いていきたいと思います。</p>
+
+<p>前提環境<br />
+Mac</p>
+
+<p>必要なステップは以下のものです。</p>
+
+<p><a href="https://co-thirtyfive.github.io/2019/02/17/github-account-get/">GitHubアカウントの作成</a></p>
+
+<hr />
+
+<p>事前準備
+GitHubでリポジトリを作成します。
+ブログ用に作るリポジトリは２つです。</p>
+
+<ol>
+<li><p>blog<br />
+<br>
+ソース管理用リポジトリ（他の名前でも問題ないですが下記のコマンドをコピペで使えなくなります）<br />
+<br></p></li>
+
+<li><p><code>username</code> .github.io<br />
+<br>
+実際のブログを公開するためのGitHub Pagesのリポジトリ<br />
+※GitHub Pagesを使うには <code>username.github.io</code> というリポジトリを作らないとダメみたいです。<br />
+また  <code>username</code>  はGitHubのアカウントを作った時のユーザー名です。
+例) hogehogeというユーザー名でアカウントを作成した場合は <code>hogehoge.github.io</code> となります。</p></li>
+</ol>
+
+<p><br></p>
+
+<hr />
+
+<ol>
+<li>HUGOのインストール<br /></li>
+<li>HUGOで記事の作成方法<br /></li>
+<li>GitHubへのプッシュ</li>
+</ol>
+
+<h2 id="1-hugoのインストール">1 HUGOのインストール</h2>
+
+<p>まずは<a href="https://co-thirtyfive.github.io/2019/02/18/homebrew/">Homebrew</a>でインストール作業に入ります。<br />
+※もし <code>Homebrew</code> をインストールされていない方は上記のリンク先にインストール方法を書いていますので<br />
+インストールしてください。<br />
+<br></p>
+
+<p>Homebrewがインストールされている前提で、画面右上にある虫眼鏡マークをクリックするとSpotlight検索が<br />
+立ち上がります。<br />
+そこで <code>terminal</code> と打つと下のトップヒットにターミナルが出てきます。<br />
+そのターミナルをクリックするとターミナルという黒いコマンドを打つ画面が立ち上がります。<br />
+そこで下記の四角の中のコマンドをコピーしてターミナルにcommand + vでペーストします。</p>
+
+<pre><code class="language-commnd:">brew install hugo
+</code></pre>
+
+<p><br><br />
+※今後この四角の中のコードは全てターミナル上で使いますので、ターミナルを使用することに慣れていく事をオススメします。</p>
+
+<p><br></p>
+
+<h2 id="2-hugoで作業用ディレクトリを作成する">2 HUGOで作業用ディレクトリを作成する。</h2>
+
+<p>このブログでは前提としてブログ記事を書いたりデザインを変更したりするディレクトリ（場所）は<br />
+GitHubで作ったクローンディレクトリと別にします。</p>
+
+<p>クローンで作ったblogフォルダと同じ階層に_blogという名前のディレクトリを作ります。<br />
+<br>
+※ディレクトリ名は、クローンで作った  <code>ディレクトリ名以外</code> でしたら何でも大丈夫ですが、<br />
+<br>
+揃えているとこの後のコマンドをそのままコピペで使うことができます。<br />
+<br>
+下記のコマンドでクローンで作ったblogフォルダと同じ階層に新たに <code>_blog</code> というフォルダができます。<br />
+<br></p>
+
+<pre><code class="language-commnd:">hugo new site _blog
+</code></pre>
+
+<p>そしてターミナル操作で下記のコマンドを打ちます。<br />
+<br>
+そうする事で、_blogフォルダ内に移動できます。</p>
+
+<pre><code class="language-commnd:">cd _blog
+</code></pre>
+
+<p><br></p>
+
+<p>hugoにテーマをインストールします。</p>
+
+<p><br></p>
+
+<p>※テーマはhugoで作るblogのデザイン( 見た目 )の部分になります。</p>
+
+<p><br></p>
+
+<p>まずは_blogフォルダのthemesフォルダに入るため下記のコマンドを打ちます。</p>
+
+<p><br></p>
+
+<p>※hugoのテーマはこのフォルダに配置します。</p>
+
+<p><br></p>
+
+<pre><code class="language-commnd:">cd themes
+</code></pre>
+
+<p>インストール方法はGitHubのリポジトリをクローンした時と同じく、下記のコマンドでお好きなテーマを</p>
+
+<p><br></p>
+
+<p>themesフォルダにインストールできます。</p>
+
+<p><br></p>
+
+<pre><code class="language-commnd:">git clone git@github.com:appernetic/hugo-bootstrap-premium.git
+</code></pre>
+
+<p><br></p>
+
+<p>※ <code>git@github.com:appernetic/hugo-bootstrap-premium.git</code> の部分はお好きなテーマをお探し下さい。</p>
+
+<p><br></p>
+
+<p>そしてSpotlight検索で_blogと打つと_blogフォルダ内に入れますので、 <code>config.toml</code> ファイルをクリックすると、</p>
+
+<p><br></p>
+
+<p>インストールしている場合はXcodeが立ち上がると思います。もしインストールされていなかったら</p>
+
+<p><br></p>
+
+<p>App Storeでインストールできますのでインストールすることをオススメします。</p>
+
+<p><br></p>
+
+<p>Xcodeでファイルの中を見ると、 <code>theme= &quot;&quot;</code> という記述がありますのでインストールしたテーマ名を</p>
+
+<p><br></p>
+
+<p>下の例のように入れます。</p>
+
+<p><br></p>
+
+<p><code>theme= &quot;hugo-bootstrap-premium&quot;</code></p>
+
+<p><br></p>
+
+<p>これから記事を書くために一旦themesフォルダから出るため下記のコマンドを打ちます。</p>
+
+<p><br></p>
+
+<pre><code class="language-commnd:">cd ..
+</code></pre>
+
+<p><br>
+そして新しい記事を生成するためには下記のコマンドを打ちます。<br />
+<br>
+そうすると_blogフォルダ内にあるcontentフォルダにpostというフォルダができ、<br />
+<br>
+その中に、下記コマンドで作成したファイルが出来ています。</p>
+
+<pre><code class="language-commnd:">hugo new post/記事名.md
+</code></pre>
+
+<p><br>
+上記のファイルはマークダウン記法で書くことが出来、ここに書いたものがこの後に行うコマンドで、<br />
+<br>
+処理されて最終的にブラウザで見ることが出来るブログになります。
+<br>
+それから下記のコマンドでローカルサーバー立ち上げ都度都度で記事のブラウザ表示状態を確認できます。<br />
+<br></p>
+
+<pre><code class="language-commnd:">hugo server -D -t hugo-bootstrap-premium 
+</code></pre>
+
+<p><br>
+上記のコマンドを打つと最後の方に</p>
+
+<pre><code class="language-commnd:">Web Server is available at http://localhost:51043/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+
+<p><br>と出ていますので <code>http://localhost:51043/</code> の部分をコピーしてブラウザのアドレスバーに貼り付けて<br />
+叩くとブラウザ表示状態を確認できます。またファイルを保存するたびにローカルサーバが更新され直ぐに<br />
+<br>
+変更部分を確認できます。<br />
+<br>
+※localhostより後の５桁数字は立ち上げるたびに新たにローカルサーバーを立ち上げるたびに変わるのでその都度コピーしてください。またcontrol + c でローカルサーバーを停止することができます。
+<br>
+そうして出来た記事は下記のコマンドを叩くことでpublicディレクトリが作成され、そこに公開ファイルが出力されます。
+<br></p>
+
+<pre><code class="language-commnd:">hugo -t hugo-bootstrap-premium
+</code></pre>
+
+<p><br>
+ここまでで、準備はできたので次にGitクローンのディレクトリであるblogに_blogの状態をコピーする作業に入ります。
+<br>
+なぜするのかは実際にブログを更新しているフォルダとGitHubを繋げているフォルダが違うからです。<br />
+<br>
+なので現在いる_blogディレクトリから一つ上のディレクトリに下記のコマンドで移動します。<br />
+<br></p>
+
+<pre><code class="language-commnd:">cd ..
+</code></pre>
+
+<p><br>
+そうすると今までいたのはターミナル上では_blogフォルダでしたが一つ上のディレクトリに移動しましたので、<br />
+<br>
+今いる場所は_blogとblogフォルダがいるディレクトリになります。<br />
+<br></p>
+
+<p><br>
+コピーするため下記のコマンドを打ちます。<br />
+<br></p>
+
+<pre><code class="language-commnd:">cp -p -f -R _blog/* blog/
+</code></pre>
+
+<p><br>
+そうすると_blogフォルダの中身がGitHubのクローンで作ったblogフォルダにコピーされます。<br />
+<br></p>
+
+<p><br>
+そして実際のGitHubのリポジトリのblogとco-thirtyfive.github.io.gitにプッシュする作業に入るため</p>
+
+<p><br>
+blogディレクトリに移動するために下記のコマンドを打ちます。<br />
+<br></p>
+
+<pre><code class="language-commnd:">cd blog
+</code></pre>
+
+<p><br>
+この時下記の流れを一度だけ行います。<br />
+<br></p>
+
+<hr />
+
+<h2 id="リモートリポジトリのサブモジュール化">リモートリポジトリのサブモジュール化</h2>
+
+<p><br></p>
+
+<p>まずは下記のコマンドでblogフォルダ内のpublicフォルダを削除します。<br />
+<br></p>
+
+<pre><code class="language-commnd:">rm -rf public
+
+</code></pre>
+
+<p><br>
+そしてpublicフォルダを公開先リポジトリとしてサブモジュール化するために下記のコマンドを実行します。<br />
+<br></p>
+
+<pre><code class="language-commnd:">git submodule add -b master git@github.com:&lt;userneme&gt;/&lt;userneme&gt;.github.io.git public
+
+</code></pre>
+
+<p><br></p>
+
+<p>※   <code>username</code>  の所はご自身で作ったGitHubアカウント名です。余談ですが、アカウント名とは違う命名で</p>
+
+<p><br></p>
+
+<p><code>&lt;not userneme&gt;.github.io.git</code> の場合上手くGitHub Pagesが機能しません。</p>
+
+<p><br></p>
+
+<p><br></p>
+
+<hr />
+
+<p><br><br />
+ここまでは初めて記事をGitHub上に上げるときに、一度だけです。<br />
+<br><br />
+※二回目以降は飛ばします。</p>
+
+<p><br>
+ここから下は連続でコマンドを打ちます。内容は自分のローカルリポジトリをリモートレポジトリにpushするためです。</p>
+
+<p><br></p>
+
+<pre><code class="language-commnd:">echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+cd public
+git add .
+
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+git push origin master
+cd ..
+
+git add .
+git commit -m &quot;$msg&quot;
+git push
+
+</code></pre>
+
+<p><br></p>
+
+<p>ここまでやるとGithubの <code>&lt;userneme&gt;.github.io</code> のリポジトリをログイン後のトップ画面左から選択してください。</p>
+
+<p><br></p>
+
+<p>そうするとリポジトリ名のすぐ下にあるタブにSettingsがありますのでクリックします。</p>
+
+<p><br></p>
+
+<p>そして下の方にスクロールしていくとGitHub Pagesという大項目がありその中に、</p>
+
+<p><br></p>
+
+<p><code>Your site is published at https://co-thirtyfive.github.io/</code>  というチェックマークがついた記述が</p>
+
+<p><br></p>
+
+<p>あると思いますので <code>https://co-thirtyfive.github.io/</code> がご自身のGitHub Pagesのアドレスになり、</p>
+
+<p><br></p>
+
+<p>アクセスすると先ほどプッシュした内容が観れると思います。</p>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fhugo_install%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=HUGO%e3%81%a7GitHubPages%e3%81%ab%e3%83%96%e3%83%ad%e3%82%b0%e3%82%92%e9%96%8b%e8%a8%ad%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95&amp;url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fhugo_install%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fhugo_install%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fhugo_install%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fhugo_install%2f&amp;title=HUGO%e3%81%a7GitHubPages%e3%81%ab%e3%83%96%e3%83%ad%e3%82%b0%e3%82%92%e9%96%8b%e8%a8%ad%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=HUGO%e3%81%a7GitHubPages%e3%81%ab%e3%83%96%e3%83%ad%e3%82%b0%e3%82%92%e9%96%8b%e8%a8%ad%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95&amp;body=Check out this site https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fhugo_install%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//co-thirtyfive-github-io.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="https://co-thirtyfive.github.io/2019/02/23/hugo_install/">HUGOでGitHubPagesにブログを開設する方法</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>category</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="/categories/hugo">hugo</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="/tags/github">github</a></li><li><a href="/tags/hugo">hugo</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  Copyright&copy; <a href='/about/'>Co.ThirtyFive</a>
+
+</small>
+</div>
+
+
+    
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+<script src="//load.sumome.com/" data-sumo-site-id="" async="async"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var ENABLE_POPOVER =  null , 
+EXPIRE_COOKIE =  null , 
+SHOW_MODAL_TIMEOUT =  null , 
+MOUSE_LEAVE =  null , 
+MODAL_SIZE =  null , 
+POST_URL =  null , 
+SIGNUP_HEADER =  null ,
+HEADER_IMAGE =  null ,
+IMG_DESCRIPTION =  null ,
+SIGNUP_TEXT =  null ,
+INPUT_PLACEHOLDER =  null ,
+SUBMIT_BUTTON =  null ,
+SUCCESS_MESSAGE =  null ,
+ERROR_MESSAGE =  null ,
+OPTIN =  null ,
+COOKIE_NAME =  null ,
+CONTENTLANGUAGE =  null ; 
+</script>
+
+
+
+
+
+
+
+<script  src="https://co-thirtyfive.github.io/js/bundle.min.a0761bf8598edda2bb2c0e348a3160c418f2bc30908f40740ee7f30dabbdeed27d82ee58e16400badd1ae84ce7be7ce10702c9be216abe5de1cb497de995e850.js" integrity="sha512-oHYb&#43;FmO3aK7LA40ijFgxBjyvDCQj0B0DufzDau97tJ9gu5Y4WQAut0a6EznvnzhBwLJviFqvl3hy0l96ZXoUA=="></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax//MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax//config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+  </body>
+</html>
+
