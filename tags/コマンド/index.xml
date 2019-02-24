@@ -19,7 +19,7 @@
       <pubDate>Sat, 23 Feb 2019 04:15:54 +0900</pubDate>
       <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
       <guid>https://co-thirtyfive.github.io/2019/02/23/vim_command_list/</guid>
-      <description></description>
+      <description>インサートモード a (カーソルの右側をインサートモードにする) i (カーソルの位置からインサートモードにする) A (行末に移動してインサートモード</description>
     </item>
     
     <item>
