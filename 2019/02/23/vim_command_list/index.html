@@ -58,7 +58,7 @@
     },
     "datePublished": "2019-02-23",
     "description": "",
-    "wordCount": 520
+    "wordCount": 783
   }
 </script>
   
@@ -192,7 +192,7 @@ if (!doNotTrack) {
 
   <small>
   &middot; Read in about 2 min
-  &middot; (520 words)
+  &middot; (783 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fco-thirtyfive.github.io%2f2019%2f02%2f23%2fvim_command_list%2f" onclick="window.open(this.href, 'mywin',
@@ -305,6 +305,62 @@ zz          (カーソルが画面中央になるようにスクロール)
 Ctrl + o    (古いカーソル位置に戻る)
 
 Ctrl + i    (新しいカーソル位置に進む)
+
+</code></pre>
+
+<p><br></p>
+
+<h2 id="行移動する">行移動する</h2>
+
+<pre><code class="language-commnd:">gg          (最初の行に移動する)
+
+34G         (34行目に移動する)
+
+G           (最終行に移動する)
+
+H           (画面上の最初の行に移動する)
+
+M           (画面上の中央の行に移動する)
+
+L           (画面上の最後の行に移動する)
+
+</code></pre>
+
+<p><br></p>
+
+<h2 id="検索および置換">検索および置換</h2>
+
+<pre><code class="language-commnd:">*                     (カーソル下の単語を検索する)
+
+#                     (カーソル下の単語を上方向に検索する)
+
+:%s/hoge1/hoge2/g     (単語のhoge1をhoge2へ置換する(% はファイル全体を表す))
+
+</code></pre>
+
+<p><br></p>
+
+<h2 id="編集">編集</h2>
+
+<pre><code class="language-commnd:">.                     (直前の変更を繰り返す)
+
+u                     (Undo)
+
+Ctrl + r              (Redo)
+
+</code></pre>
+
+<p><br></p>
+
+<h2 id="コピー-ペースト">コピー、ペースト</h2>
+
+<pre><code class="language-commnd:">yy                    (今いる行をコピーする)
+
+p                     (カーソルの場所に、ペーストする)
+
+yy7p                  (現在の行をコピーし、下に7行追加する)
+
+gv                    (直前の選択範囲を再選択する)
 
 </code></pre>
 
