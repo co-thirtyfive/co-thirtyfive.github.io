@@ -8,10 +8,19 @@
     <language>ja-jp</language>
     <managingEditor>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</managingEditor>
     <webMaster>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</webMaster>
-    <lastBuildDate>Sat, 23 Feb 2019 04:16:16 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 26 Feb 2019 23:30:37 +0900</lastBuildDate>
     
 	<atom:link href="https://co-thirtyfive.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windowsコマンドnslookup</title>
+      <link>https://co-thirtyfive.github.io/2019/02/26/windows_command_nslookup/</link>
+      <pubDate>Tue, 26 Feb 2019 23:30:37 +0900</pubDate>
+      <author>corporation.thirtyfive@gmail.com (Co.ThirtyFive)</author>
+      <guid>https://co-thirtyfive.github.io/2019/02/26/windows_command_nslookup/</guid>
+      <description>nslookup Windowsコマンドの一つである nslookup はDNSによる名前解決を行うツールです。 IPアドレス(Aレコード)を正引きする場合は下記のようにする。</description>
+    </item>
     
     <item>
       <title>Windows10で外付けHDDが認識しない</title>
